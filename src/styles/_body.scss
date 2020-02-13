@@ -60,6 +60,7 @@ li {
 }
 
 .logo {
+  position: relative;
   padding: 29px 0;
   padding-left: 23px;
 
@@ -69,14 +70,17 @@ li {
   color: $color-white;
   text-transform: uppercase;
 
+  cursor: pointer;
+
   &:hover {
     transform: scale(1.1);
   }
 
-  cursor: pointer;
-
-  &--symbol {
-    padding: 0;
+  &::after {
+    position: absolute;
+    content: '*';
+    top: 26px;
+    right: -8px;
 
     color: $color-bittersweet;
   }
@@ -134,17 +138,17 @@ main {
 
   position: relative;
 
-  padding: 49px 52px 84px 59px;
+  padding: 49px 52px 67px 76px;
 
   background-color: $color-bittersweet;
 
-  &__upright,
-  &__horizontally {
+  &__vertical,
+  &__horizontal {
     cursor: pointer;
   }
 
-  &__horizontally {
-    margin-right: 30px;
+  &__horizontal {
+    margin-right: 24px;
   }
 
   &::before {
@@ -157,6 +161,8 @@ main {
     height: 40px;
 
     background: url('../../src/assets/arrow.svg') no-repeat 50% 50%;
+
+    cursor: pointer;
   }
 
   &::after {
@@ -170,6 +176,8 @@ main {
 
     background: url('../../src/assets/arrow.svg') no-repeat 50% 50%;
     transform: rotate(180deg);
+
+    cursor: pointer;
   }
 }
 
