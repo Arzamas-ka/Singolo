@@ -3,11 +3,13 @@
 }
 
 body {
+  width: 1020px;
   margin: $margin-center;
   padding: 0;
 
   font-family: 'Lato', 'Aria', sans-serif;
   font-size: 1rem;
+  font-weight: 400;
   line-height: 1.2;
 }
 
@@ -34,4 +36,218 @@ figure {
 
 li {
   list-style: $none;
+}
+
+.container {
+  margin: $margin-center;
+  padding: 0 1rem;
+}
+
+//  header
+.header {
+  background-color: $color-darkblack;
+}
+
+.header {
+  @include flex();
+  justify-content: space-between;
+
+  &-line {
+    height: 10px;
+
+    background-color: $color-darkgrey;
+  }
+}
+
+.logo {
+  padding: 29px 0;
+  padding-left: 23px;
+
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: $color-white;
+  text-transform: uppercase;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  cursor: pointer;
+
+  &--symbol {
+    padding: 0;
+
+    color: $color-bittersweet;
+  }
+}
+
+.navigation {
+  &-list {
+    @include flex();
+    flex-direction: $row;
+  }
+
+  &__item {
+    position: relative;
+    padding: 37px 21px 28px 4px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 48px;
+      left: -10px;
+
+      width: 3px;
+      height: 3px;
+      
+      background-color: $color-grey;
+      border-radius: 50%;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__link {
+    font-size: .75rem;
+    letter-spacing: 0.5px;
+    color: $color-white;
+
+    text-transform: uppercase;
+
+    &--active {
+      color: $color-bittersweet;
+    }
+  }
+}
+
+// main
+main {
+  background-color: $color-bittersweet;
+}
+
+.banner {
+  @include flex();
+  align-items: $center;
+
+  position: relative;
+
+  padding: 49px 52px 84px 59px;
+
+  background-color: $color-bittersweet;
+
+  &__upright,
+  &__horizontally {
+    cursor: pointer;
+  }
+
+  &__horizontally {
+    margin-right: 30px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 278px;
+    left: 39px;
+
+    width: 40px;
+    height: 40px;
+
+    background: url('../../src/assets/arrow.svg') no-repeat 50% 50%;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 269px;
+    right: 36px;
+
+    width: 40px;
+    height: 40px;
+
+    background: url('../../src/assets/arrow.svg') no-repeat 50% 50%;
+    transform: rotate(180deg);
+  }
+}
+
+.information  {
+  background-color: #F2F2F2;
+  color: $color-grey;
+  background-color: $color-white;
+
+  &__title {
+    padding: 60px 0 4px 22px;
+
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+
+  &__text {
+    padding: 0 0 27px 22px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    letter-spacing: .4px;
+  }
+
+  &__list {
+    @include flex();
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+    width: 220px;
+    margin-left: 6rem;
+    margin-bottom: .5rem;
+
+    & h4 {
+      margin-left: 10px;
+      font-size: 1.1rem;
+    }
+    & p {
+      font-size: 13px;
+      letter-spacing: .2px;
+      line-height: 1.7;
+      hyphens: auto;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 2px;
+      left: -87px;
+
+      width: 65px;
+      height: 65px;
+    }
+
+    &:nth-child(1)::before {
+      background: url('../../src/assets/pen.svg') no-repeat 50% 50%;
+    }
+
+    &:nth-child(2)::before {
+      background: url('../../src/assets/bulb.svg') no-repeat 50% 50%;
+    }
+
+    &:nth-child(3)::before {
+      background: url('../../src/assets/heart.svg') no-repeat 50% 50%;
+    }
+
+    &:nth-child(4)::before {
+      background: url('../../src/assets/phone.svg') no-repeat 50% 50%;
+    }
+
+    &:nth-child(5)::before {
+      background: url('../../src/assets/bubble.svg') no-repeat 50% 50%;
+    }
+
+    &:nth-child(6)::before {
+      background: url('../../src/assets/star.svg') no-repeat 50% 50%;
+    }
+  }
 }

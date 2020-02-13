@@ -1,4 +1,4 @@
-@mixin flex($justify: space-around) {
+@mixin flex() {
   display: flex;
-  justify-content: $justify;
+  justify-content: space-around;
 }
