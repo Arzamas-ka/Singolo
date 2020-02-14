@@ -187,7 +187,7 @@ main {
   background-color: $color-white;
 
   &__title {
-    padding: 60px 0 4px 22px;
+    padding: 60px 0 2px 22px;
 
     font-size: 1.8rem;
     font-weight: 900;
@@ -198,7 +198,7 @@ main {
     padding: 0 0 27px 22px;
     font-size: 1.1rem;
     line-height: 1.6;
-    letter-spacing: .4px;
+    letter-spacing: .2px;
   }
 
   &__list {
@@ -210,51 +210,60 @@ main {
   &__item {
     position: relative;
     width: 220px;
-    margin-left: 6rem;
-    margin-bottom: .5rem;
+    margin-left: 6.4rem;
+    margin-bottom: 1rem;
 
     & h4 {
-      margin-left: 10px;
       font-size: 1.1rem;
     }
     & p {
-      font-size: 13px;
+      font-size: 11px;
       letter-spacing: .2px;
-      line-height: 1.7;
+      line-height: 2;
       hyphens: auto;
     }
 
     &::before {
       position: absolute;
       content: "";
-      top: 2px;
-      left: -87px;
 
       width: 65px;
       height: 65px;
     }
 
     &:nth-child(1)::before {
+      top: 2px;
+      left: -80px;
       background: url('../../src/assets/pen.svg') no-repeat 50% 50%;
     }
 
     &:nth-child(2)::before {
+      top: 2px;
+      left: -94px;
       background: url('../../src/assets/bulb.svg') no-repeat 50% 50%;
     }
 
     &:nth-child(3)::before {
+      top: 2px;
+      left: -107px;
       background: url('../../src/assets/heart.svg') no-repeat 50% 50%;
     }
 
     &:nth-child(4)::before {
+      top: 2px;
+      left: -80px;
       background: url('../../src/assets/phone.svg') no-repeat 50% 50%;
     }
 
     &:nth-child(5)::before {
+      top: 2px;
+      left: -94px;
       background: url('../../src/assets/bubble.svg') no-repeat 50% 50%;
     }
 
     &:nth-child(6)::before {
+      top: 2px;
+      left: -107px;
       background: url('../../src/assets/star.svg') no-repeat 50% 50%;
     }
   }
