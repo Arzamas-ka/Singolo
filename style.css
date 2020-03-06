@@ -148,7 +148,7 @@ main {
   width: 40px;
   height: 40px;
 
-  background: url('../../src/assets/arrow.svg') no-repeat 50% 50%;
+  background: url('./src/assets/arrow.svg') no-repeat 50% 50%;
   cursor: pointer;
 }
 
@@ -161,7 +161,7 @@ main {
   width: 40px;
   height: 40px;
 
-  background: url('../../src/assets/arrow.svg') no-repeat 50% 50%;
+  background: url('./src/assets/arrow.svg') no-repeat 50% 50%;
   transform: rotate(180deg);
   cursor: pointer;
 }
@@ -510,15 +510,15 @@ textarea {
 }
 
 .contact-item:nth-child(1)::before {
-  background: url('../assets/location.png') no-repeat;
+  background: url('./src/assets/location.png') no-repeat;
 }
 
 .contact-item:nth-child(2)::before {
-  background: url('../assets/phone.png') no-repeat;
+  background: url('./src/assets/phone.png') no-repeat;
 }
 
 .contact-item:nth-child(3)::before {
-  background: url('../assets/mail.png') no-repeat;
+  background: url('./src/assets/mail.png') no-repeat;
 }
 
 .contact-item {
