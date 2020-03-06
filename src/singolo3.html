@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/styles/singolo.3.css">
+    <link rel="stylesheet" href="../src/styles/singolo3.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,600,900&display=swap" rel="stylesheet">
     <title>Singolo3</title>
   </head>
@@ -11,52 +11,32 @@
     <main>
       <div class="quote">
         <div class="quote-wrapper  container">
-          <h1>Get a Quote</h1>
+          <h1 class="quote-title">Get a Quote</h1>
           <p class="quote_text">
             Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo tortor mauris condimentum nibh.
           </p>
           <div class="quote__content">
             <form class="quote__form">
-              <input
-                name="name"
-                type="text"
-                placeholder="Name (Required)"
-                id="name"
-                required>
-              <input
-                name="email"
-                type="email"
-                placeholder="Email (Required)"
-                id="email"
-                required>
-              <input
-                name="subject"
-                type="text"
-                placeholder="Subject"
-                id="subject">
-              <textarea
-                name="textarea"
-                placeholder="Describe your project in detail..."
-                id="project"
-                cols="30"
-                rows="10">
-              </textarea>
-              <button type="quote-submit">Submit</button>
+              <input name="name" type="text" placeholder="Name (Required)" id="name" required>
+              <input name="email" type="email" placeholder="Email (Required)" id="email" required>
+              <input name="subject" type="text" placeholder="Subject" id="subject">
+              <textarea name="textarea" placeholder="Describe your project in detail..." id="project" cols="30" rows="10"></textarea>
             </form>
             <div class="quote-information">
               <h3>Contact Information</h3>
               <p class="quote-information_text">Quisque hendrerit purus dapibus, ornare nibh vitae, viver- ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
               </p>
-
-              <div class="contact">
-                <p class="text_location">
-                  Elm St. 14/05 Lost City
-                </p>
-                <a class="number" href="tel:035283318635">03528 331 86 35</a>
-                <a class="e_mail" href="mailto:info@singolo.com">
-                  info@singolo.com
-                </a>
-              </div>
+              <ul class="contact__list">
+                <li class="contact-item">
+                  <p class="contact-location">Elm St. 14/05 Lost City</p>
+                </li>
+                <li class="contact-item">
+                  <a class="contact-number" href="tel:035283318635">03528 331 86 35</a>
+                </li>
+                <li class="contact-item">
+                  <a class="contact-mail" href="mailto:info@singolo.com">info@singolo.com</a> 
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -65,24 +45,28 @@
     <footer class="footer">
       <div class="footer-wrapper  container">
         <p>© Copyright 2013</p>
-        <div class="social_footer">
-          <img
-            class="social"
-            src="../src/assets/Facebook.svg"
-            alt="Facebook">
-          <img
-            class="social"
-            src="../src/assets/Google.svg"
-            alt="Google">
-          <img
-            class="social"
-            src="../src/assets/Twitter.svg"
-            alt="Twitter">
-          <img
-            class="social"
-            src="../src/assets/LinkedIn.svg"
-            alt="LinkedIn">
-        </div>
+        <ul class="footer-cart__list">
+          <li class="footer-cart__item  footer-cart__item--fb">
+            <a>
+              <img src="../src/assets/facebook.png" alt="Facebook">
+            </a>
+          </li>
+          <li class="footer-cart__item  footer-cart__item--gl">
+            <a>
+              <img src="../src/assets/google.png" alt="Google">
+            </a>
+          </li>
+          <li class="footer-cart__item  footer-cart__item--tw">
+            <a>
+              <img src="../src/assets/twitter.png" alt="Twitter">
+            </a>
+          </li>
+          <li class="footer-cart__item  footer-cart__item--lk">
+            <a>
+              <img src="../src/assets/linkedIn.png" alt="LinkedIn">
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>
