@@ -1,1 +1,1 @@
-# Singolo
+# [Singolo deploy](https://singolo-2020.netlify.com/)
