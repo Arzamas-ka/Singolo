@@ -79,7 +79,7 @@ li {
 .logo::after {
   position: absolute;
   content: '*';
-  top: 26px;
+  top: 30px;
   right: -8px;
 
   color: #f06c64;
@@ -92,7 +92,7 @@ li {
 
 .navigation__item {
   position: relative;
-  padding: 38px 22px 18px 4px;
+  padding: 38px 21px 18px 4px;
 }
 
 .navigation__item::before {
@@ -113,8 +113,8 @@ li {
 }
 
 .navigation__link {
-  font-size: 0.75rem;
-  letter-spacing: 0.5px;
+  font-size: 12px;
+  letter-spacing: 0.6px;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -128,22 +128,22 @@ main {
   background-color: #f06c64;
 }
 
-.banner {
+.banner__gallery {
   display: flex;
   justify-content: space-around;
   align-items: center;
 
   position: relative;
-  padding: 51px 52px 65px 76px;
+  padding: 51px 35px 55px 58px;
 
   background-color: #f06c64;
 }
 
-.banner::before {
+.banner__gallery::before {
   position: absolute;
   content: '';
-  top: 278px;
-  left: 39px;
+  top: 279px;
+  left: 25px;
 
   width: 40px;
   height: 40px;
@@ -152,11 +152,11 @@ main {
   cursor: pointer;
 }
 
-.banner::after {
+.banner__gallery::after {
   position: absolute;
   content: '';
-  top: 269px;
-  right: 36px;
+  top: 270px;
+  right: 21px;
 
   width: 40px;
   height: 40px;
@@ -175,6 +175,11 @@ main {
   margin-right: 24px;
 }
 
+.banner-line {
+  height: 10px;
+  background-color: #ea676b;
+}
+
 .information {
   background-color: #f2f2f2;
   color: #666d89;
@@ -190,10 +195,15 @@ main {
 }
 
 .information__text {
-  padding: 0 0 33px 22px;
+  padding: 0 0 32px 22px;
   font-size: 1.1rem;
   line-height: 1.7;
   letter-spacing: 0.2px;
+}
+
+.information-line {
+  height: 10px;
+  background-color: #ffffff;
 }
 
 .features {
@@ -201,7 +211,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
 
-  padding-bottom: 28px;
+  padding-bottom: 18px;
 }
 
 .features__item {
@@ -232,7 +242,7 @@ main {
   line-height: 20px;
 }
 
-.portfolio_wrapper {
+.portfolio {
   background-color: #2D303A;
 }
 
@@ -287,7 +297,7 @@ main {
   justify-content: space-evenly;
   flex-wrap: wrap;
 
-  padding-bottom: 52px;
+  padding-bottom: 42px;
 }
 
 .portfolio-picture {
@@ -297,10 +307,15 @@ main {
   margin-bottom: 20px;
 }
 
-.about-us-wrapper {
-  padding-bottom: 69px;
+.portfolio-line {
+  height: 10px;
+  background-color: #323746;
+}
 
-  background-color: #ffffff;
+.about-us {
+  padding-bottom: 59px;
+
+  background-color: #f2f2f2;
 }
 
 .about-us-title {
@@ -328,6 +343,11 @@ main {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+}
+
+.about-us__line {
+  height: 10px;
+  background-color: #ffffff;
 }
 
 .team-cart {
@@ -415,7 +435,7 @@ main {
   display: flex;
 
   padding-left: 24px;
-  padding-bottom: 73px;
+  padding-bottom: 63px;
 }
 
 .quote__form {
@@ -490,6 +510,11 @@ textarea {
   font-weight: 400;
 }
 
+.quote__line {
+  height: 10px;
+  background-color: #ea676b;
+}
+
 .contact__list {
   padding-left: 23px;
 }
@@ -502,7 +527,7 @@ textarea {
 .contact-item::before {
   position: absolute;
   content: '';
-  top: 5px;
+  top: 6px;
   left: -21px;
 
   width: 15px;
@@ -526,10 +551,12 @@ textarea {
 
   font-size: 12px;
   line-height: 12px;
+  color: #efd7d9;
 }
 
 .contact-item a {
   color: #f0d8d9;
+  font-size: 12px;
   font-weight: 400;
 }
 
@@ -559,7 +586,7 @@ textarea {
   display: flex;
   justify-content: space-between;
 
-  padding: 21px 10px;
+  padding: 21px 10px 21px 10px;
 }
 
 .footer-cart__item {
