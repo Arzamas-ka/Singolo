@@ -297,7 +297,7 @@ main {
   justify-content: space-evenly;
   flex-wrap: wrap;
 
-  padding-bottom: 42px;
+  padding-bottom: 43px;
 }
 
 .portfolio-picture {
@@ -586,7 +586,7 @@ textarea {
   display: flex;
   justify-content: space-between;
 
-  padding: 21px 10px 21px 10px;
+  padding: 23px 10px 21px 10px;
 }
 
 .footer-cart__item {
