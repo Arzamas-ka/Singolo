@@ -313,7 +313,7 @@ main {
 }
 
 .about-us {
-  padding-bottom: 59px;
+  padding-bottom: 58px;
 
   background-color: #f2f2f2;
 }
@@ -365,7 +365,7 @@ main {
 
 .team-cart:nth-child(1) {
   margin-left: 24px;
-  margin-right: -5px;
+  margin-right: -3px;
 }
 
 .team-cart:nth-child(2) {
@@ -387,7 +387,7 @@ main {
 
 .team-cart__text {
   margin: 5px 0 5px;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
 
   line-height: 18px;
   font-size: 12px;
