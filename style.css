@@ -345,6 +345,10 @@ display: none;
   background-color: #323746;
 }
 
+.portfolio-picture--border {
+  border: 5px dashed #F06C64;
+}
+
 .about-us {
   padding-bottom: 58px;
 

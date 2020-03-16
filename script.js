@@ -79,3 +79,13 @@ const activePortfolioMenu = () => {
   return;
 };
 activePortfolioMenu();
+
+const getActivePicture = () => {
+  galleryImages.addEventListener('click', event => {
+    galleryImages.querySelectorAll('.portfolio-picture').forEach(elem => {
+      elem.classList.remove('portfolio-picture--border');
+      event.target.classList.add('portfolio-picture--border');
+    });
+  });
+};
+getActivePicture();
