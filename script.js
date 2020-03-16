@@ -83,6 +83,11 @@ activePortfolioMenu();
 const getActivePicture = () => {
   galleryImages.addEventListener('click', event => {
     galleryImages.querySelectorAll('.portfolio-picture').forEach(elem => {
+      if (event.target.classList.contains('portfolio-gallery')) {
+        elem.classList.remove('portfolio-picture--border');
+        return;
+      }
+
       elem.classList.remove('portfolio-picture--border');
       event.target.classList.add('portfolio-picture--border');
     });
