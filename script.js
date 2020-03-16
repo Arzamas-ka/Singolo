@@ -1,6 +1,8 @@
 const navList = document.querySelector('.navigation__list');
 const arrowLeft = document.querySelector('.arrow-left');
 const arrowRight = document.querySelector('.arrow-right');
+const portfolioMenuList = document.querySelector('.portfolio-list');
+const galleryImages = document.querySelector('.portfolio-gallery');
 
 const activeNav = () => {
   navList.addEventListener('click', evt => {
@@ -52,3 +54,28 @@ const slider = () => {
   });
 };
 slider();
+
+const activePortfolioMenu = () => {
+  portfolioMenuList.addEventListener('click', event => {
+    portfolioMenuList.querySelectorAll('.portfolio-item').forEach(elem => {
+      if (event.target.classList.contains('portfolio-list')) {
+        event.target.style.border = 'none';
+        return;
+      }
+
+      elem.classList.remove('portfolio-item--active');
+      event.target.classList.add('portfolio-item--active');
+
+      if (event.target.classList.contains('portfolio-item--active')) {
+        let setPictures = [
+          ...galleryImages.querySelectorAll('.portfolio-picture')
+        ];
+        setPictures.unshift(setPictures.pop());
+        setPictures.forEach(picture => galleryImages.append(picture));
+      }
+    });
+  });
+
+  return;
+};
+activePortfolioMenu();

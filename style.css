@@ -62,7 +62,7 @@ header {
   background-color: #323746;
 }
 
-.logo {
+#logo {
   position: relative;
   padding-top: 30px;
   padding-left: 24px;
@@ -71,9 +71,13 @@ header {
   font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 0.5px;
-  color: #ffffff;
+
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.logo {
+  color: #ffffff;
 }
 
 .logo:hover {
@@ -115,10 +119,6 @@ header {
 
 .navigation__item:first-child::before {
 display: none;
-}
-
-.navigation__item:hover {
-  transform: scale(1.1);
 }
 
 .navigation__link {
@@ -316,9 +316,11 @@ display: none;
   padding: 2px 7px;
   color: #767e9e;
   font-weight: 400;
+
+  outline: none;
 }
 
-.portfolio-item:nth-child(1) {
+.portfolio-item--active {
   border: 1px solid white;
   color: white;
 }
