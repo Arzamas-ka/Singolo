@@ -3,6 +3,11 @@ const arrowLeft = document.querySelector('.arrow-left');
 const arrowRight = document.querySelector('.arrow-right');
 const portfolioMenuList = document.querySelector('.portfolio-list');
 const galleryImages = document.querySelector('.portfolio-gallery');
+const btnForm = document.querySelector('.quote__button');
+const popup = document.querySelector('.popup');
+const popupBtn = document.querySelector('.popup-btn');
+const form = document.querySelector('.quote__form');
+const formBtn = document.querySelector('.quote__button');
 
 const activeNav = () => {
   navList.addEventListener('click', evt => {
@@ -94,3 +99,37 @@ const getActivePicture = () => {
   });
 };
 getActivePicture();
+
+const sendForm = () => {
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+
+    popup.classList.remove('popup--hidden');
+    popup.classList.add('popup--show');
+
+    document.querySelector('.popup-theme').textContent = document.querySelector(
+      '[placeholder="Subject"]'
+    ).value;
+    document.querySelector(
+      '.popup-description'
+    ).textContent = document.querySelector(
+      '[placeholder="Describe your project in detail..."]'
+    ).value;
+
+    document.querySelector('[placeholder="Name (Required)"]').value = '';
+    document.querySelector('[placeholder="Email (Required)"]').value = '';
+    document.querySelector('[placeholder="Subject"]').value = '';
+    document.querySelector(
+      '[placeholder="Describe your project in detail..."]'
+    ).value = '';
+  });
+};
+sendForm();
+
+const closePopup = () => {
+  popupBtn.addEventListener('click', () => {
+    popup.classList.add('popup--hidden');
+    popup.classList.remove('popup--show');
+  });
+};
+closePopup();

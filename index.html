@@ -235,8 +235,8 @@
               <input name="email" type="email" placeholder="Email (Required)" id="email" required>
               <input name="subject" type="text" placeholder="Subject" id="subject">
               <textarea name="textarea" placeholder="Describe your project in detail..." id="project" cols="30" rows="10"></textarea>
-              
-              <button type="submit" mmethod="POST">Send</button>
+
+              <button class="quote__button" type="submit" mmethod="POST">Send</button>
             </form>
             <div class="quote-information">
               <h3>Contact Information</h3>
@@ -257,6 +257,17 @@
           </div>
           <div class="quote__line"></div>
         </div>
+      </div>
+
+      <div class="popup">
+        <p class="popup-row  popup-title">The letter was sent  </p>
+        <p class="popup-row">Subject:
+          <span class="popup-theme"></span>
+        </p>
+        <p class="popup-row">Description:
+          <span class="popup-description"></span>
+        </p>
+        <button class="popup-btn">OK</button>
       </div>
     </main>
 

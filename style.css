@@ -184,7 +184,7 @@ header {
 
 .arrow-left:hover,
 .arrow-right:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .banner__gallery_2 {
@@ -515,7 +515,7 @@ header {
   color: #f08586;
 }
 
-.quote__form button {
+.quote__button {
   width: 135px;
   padding: 1rem;
   margin: 20px 0;
@@ -523,8 +523,8 @@ header {
   font-size: 1.2rem;
   font-weight: 700;
 
-  background-color: #FBC65F;
-  color: #886A30;
+  background-color: #fbc65f;
+  color: #886a30;
   text-transform: uppercase;
   border-radius: 5px;
 
@@ -532,7 +532,7 @@ header {
   outline: none;
 }
 
-.quote__form button:hover {
+.quote__button:hover {
   color: #2d303a;
 }
 
@@ -665,5 +665,58 @@ textarea {
 }
 
 .footer-cart__item:hover {
-  opacity: .6;
+  opacity: 0.6;
+}
+
+/* popup */
+.popup {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+
+  width: 500px;
+  padding: 1.2rem;
+
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #2d303a;
+  border-radius: 5px;
+}
+
+.popup-title {
+  text-transform: uppercase;
+}
+
+.popup-row {
+  color: #ffffff;
+  text-overflow: ellipsis;
+}
+
+.popup-btn {
+  width: 100px;
+  padding: 0.7rem;
+  margin: 10px;
+
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+
+  background-color: #ea676b;
+  color: #ffffff;
+}
+
+.popup-btn:hover {
+  color: #000000;
+}
+
+.popup--show {
+  display: flex;
+  position: fixed;
+}
+
+.popup--hidden {
+  display: none;
 }
