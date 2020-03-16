@@ -43,11 +43,15 @@ li {
 }
 
 /* header */
-.header {
-  background-color: #2d303a;
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .header {
+  background-color: #2d303a;
   display: flex;
   justify-content: space-between;
 }
@@ -85,7 +89,8 @@ li {
   color: #f06c64;
 }
 
-.navigation-list {
+
+.navigation__list {
   display: flex;
   flex-direction: row;
 }
@@ -122,6 +127,7 @@ li {
 .navigation__link--active {
   color: #f06c64;
 }
+
 
 /* main */
 main {

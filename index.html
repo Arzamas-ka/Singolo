@@ -10,23 +10,23 @@
   <body>
     <header>
       <div class="header  container">
-        <h1 class="logo">Singolo</h1>
+        <h1 class="logo" id="home">Singolo</h1>
         <nav class="navigation">
-          <ul class="navigation-list">
+          <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link  navigation__link--active" href="#">Home</a>
+              <a class="navigation__link  navigation__link--active" href="#home">Home</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Services</a>
+              <a class="navigation__link" href="#services">Services</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Portfolio</a>
+              <a class="navigation__link" href="#portfolio">Portfolio</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">About</a>
+              <a class="navigation__link" href="#about">About</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Contact</a>
+              <a class="navigation__link" href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
@@ -43,7 +43,7 @@
         <div class="banner-line"></div>  
       </div>
       <div class="information  container">
-        <h3 class="information__title">Our Services</h3>
+        <h3 class="information__title" id="services">Our Services</h3>
         <p class="information__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
         </p>
         <div class="features">
@@ -93,7 +93,7 @@
         <div class="information-line"></div>
       </div>
 
-      <div class="portfolio">
+      <div class="portfolio" id="portfolio">
         <div class="container">
           <h2 class="portfolio-title">Portfolio</h2>
           <p class="portfolio-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -120,7 +120,7 @@
         </div>
         <div class="portfolio-line"></div>
       </div> 
-      <div class="about-us">
+      <div class="about-us" id="about">
         <div class="container">
           <h2 class="about-us-title">About Us</h2>
           <p class="about-us-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -213,7 +213,7 @@
 
       <div class="quote">
         <div class="quote-wrapper  container">
-          <h1 class="quote-title">Get a Quote</h1>
+          <h1 class="quote-title" id="contact">Get a Quote</h1>
           <p class="quote_text">
             Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo tortor mauris condimentum nibh.
           </p>
@@ -273,5 +273,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
