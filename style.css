@@ -2,8 +2,12 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  width: 1020px;
+  max-width: 1020px;
   margin: 0 auto;
   padding: 0;
 
@@ -44,7 +48,7 @@ li {
 
 /* header */
 header {
-  /* position: sticky; */
+  position: sticky;
   top: 0;
   z-index: 10;
 }
@@ -57,7 +61,6 @@ header {
 
 .header-line {
   height: 10px;
-
   background-color: #323746;
 }
 
@@ -76,12 +79,13 @@ header {
 }
 
 .logo {
-  color: #ffffff;
+  color: white;
 }
 
 .logo:hover {
-  transform: scale(1.1);
+  color: #cccccc;
 }
+
 
 .logo::after {
   position: absolute;
@@ -124,6 +128,10 @@ header {
   letter-spacing: 0.6px;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.navigation__link:hover {
+  color: #cccccc;
 }
 
 .navigation__link--active {
@@ -187,6 +195,7 @@ header {
 }
 
 .banner__gallery_2 {
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -212,13 +221,15 @@ header {
 .banner__home-vertical,
 .banner__home-horizontal,
 .banner__horizontal-black,
-.banner__vertical-black {
+.banner__vertical-black,
+.banner__home-phones_2,
+.banner__phones_2-black {
   position: absolute;
 }
 
 .banner__home-vertical {
   top: 77%;
-  left: 19%;
+  left: 18.5%;
 
   cursor: pointer;
 }
@@ -230,8 +241,16 @@ header {
   cursor: pointer;
 }
 
+.banner__home-phones_2 {
+  top: 84%;
+  right: 49.1%;
+
+  cursor: pointer;
+}
+
 .banner__home-vertical:hover,
-.banner__home-horizontal:hover {
+.banner__home-horizontal:hover,
+.banner__home-phones_2:hover {
   border-radius: 50%;
   border: 1px solid #ccc;
 }
@@ -252,6 +271,12 @@ header {
   display: none;
   top: 184px;
   right: 190px;
+}
+
+.banner__phones_2-black {
+  display: none;
+  top: 66px;
+  left: 347px;
 }
 
 .black-show {

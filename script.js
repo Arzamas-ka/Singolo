@@ -10,8 +10,10 @@ const form = document.querySelector('.quote__form');
 const formBtn = document.querySelector('.quote__button');
 const phoneBtnVert = document.querySelector('.banner__home-vertical');
 const phoneBtnHorzt = document.querySelector('.banner__home-horizontal');
+const phoneBtnSldTwo = document.querySelector('.banner__home-phones_2');
 const screenBlackVert = document.querySelector('.banner__vertical-black');
 const screenBlackHorzt = document.querySelector('.banner__horizontal-black');
+const screenBlackPhoneTwo = document.querySelector('.banner__phones_2-black');
 
 const activeNav = () => {
   navList.addEventListener('click', evt => {
@@ -145,6 +147,10 @@ const toggleBlackScreenPhone = () => {
 
   phoneBtnHorzt.addEventListener('click', () => {
     screenBlackHorzt.classList.toggle('black-show');
+  });
+
+  phoneBtnSldTwo.addEventListener('click', () => {
+    screenBlackPhoneTwo.classList.toggle('black-show');
   });
 };
 toggleBlackScreenPhone();
