@@ -8,6 +8,10 @@ const popup = document.querySelector('.popup');
 const popupBtn = document.querySelector('.popup-btn');
 const form = document.querySelector('.quote__form');
 const formBtn = document.querySelector('.quote__button');
+const phoneBtnVert = document.querySelector('.banner__home-vertical');
+const phoneBtnHorzt = document.querySelector('.banner__home-horizontal');
+const screenBlackVert = document.querySelector('.banner__vertical-black');
+const screenBlackHorzt = document.querySelector('.banner__horizontal-black');
 
 const activeNav = () => {
   navList.addEventListener('click', evt => {
@@ -134,6 +138,13 @@ const closePopup = () => {
 };
 closePopup();
 
-// const anchorScroll = () => {
+const toggleBlackScreenPhone = () => {
+  phoneBtnVert.addEventListener('click', () => {
+    screenBlackVert.classList.toggle('black-show');
+  });
 
-// anchorScroll();
+  phoneBtnHorzt.addEventListener('click', () => {
+    screenBlackHorzt.classList.toggle('black-show');
+  });
+};
+toggleBlackScreenPhone();

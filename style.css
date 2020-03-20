@@ -197,7 +197,7 @@ header {
 
 .banner__vertical_1,
 .banner__horizontal_1 {
-  cursor: pointer;
+  position: relative;
 }
 
 .banner__horizontal_1 {
@@ -209,9 +209,53 @@ header {
   background-color: #ea676b;
 }
 
+.banner__home-vertical,
+.banner__home-horizontal,
+.banner__horizontal-black,
+.banner__vertical-black {
+  position: absolute;
+}
+
+.banner__home-vertical {
+  top: 77%;
+  left: 19%;
+
+  cursor: pointer;
+}
+
+.banner__home-horizontal {
+  top: 44%;
+  right: 52.7%;
+
+  cursor: pointer;
+}
+
+.banner__home-vertical:hover,
+.banner__home-horizontal:hover {
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
 .banner-line_2 {
   height: 10px;
   background-color: #648bf0;
+}
+
+.banner__vertical-black {
+  display: none;
+  top: 186px;
+  left: 41px;
+  transform: rotate(90deg);
+}
+
+.banner__horizontal-black {
+  display: none;
+  top: 184px;
+  right: 190px;
+}
+
+.black-show {
+  display: block;
 }
 
 .information {
@@ -351,7 +395,7 @@ header {
 }
 
 .portfolio-picture--border {
-  border: 5px dashed #f06c64;
+  outline: 5px dashed #f06c64;
 }
 
 .about-us {
