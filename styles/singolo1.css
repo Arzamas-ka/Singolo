@@ -147,7 +147,7 @@ main {
   width: 40px;
   height: 40px;
 
-  background: url('../../src/assets/arrow.svg') no-repeat 50% 50%;
+  background: url('./assets/arrow.svg') no-repeat 50% 50%;
   cursor: pointer;
 }
 
@@ -160,7 +160,7 @@ main {
   width: 40px;
   height: 40px;
 
-  background: url('../../src/assets/arrow.svg') no-repeat 50% 50%;
+  background: url('./assets/arrow.svg') no-repeat 50% 50%;
   transform: rotate(180deg);
   cursor: pointer;
 }

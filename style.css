@@ -649,15 +649,15 @@ textarea {
 }
 
 .contact-item:nth-child(1)::before {
-  background: url('./src/assets/location.png') no-repeat;
+  background: url('./assets/location.png') no-repeat;
 }
 
 .contact-item:nth-child(2)::before {
-  background: url('./src/assets/phone.png') no-repeat;
+  background: url('./assets/phone.png') no-repeat;
 }
 
 .contact-item:nth-child(3)::before {
-  background: url('./src/assets/mail.png') no-repeat;
+  background: url('./assets/mail.png') no-repeat;
 }
 
 .contact-item {
