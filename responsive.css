@@ -83,6 +83,8 @@ header {
 }
 
 .logo {
+  position: relative;
+
   color: white;
 }
 
@@ -93,7 +95,7 @@ header {
 .logo::after {
   position: absolute;
   content: '*';
-  top: 27px;
+  top: -3px;
   right: -10px;
 
   color: #f06c64;
@@ -159,6 +161,7 @@ header {
   display: flex;
 
   font-size: 0;
+  background-color: #f06c64;
 }
 
 .banner,
@@ -218,19 +221,18 @@ header {
 .arrow-left {
   position: absolute;
   top: 47%;
-  left: 4%;
+  left: 15%;
 
   width: 40px;
   height: 40px;
 
   cursor: pointer;
-  /* z-index: 20; */
 }
 
 .arrow-right {
   position: absolute;
   top: 46%;
-  right: 4%;
+  right: 15%;
 
   width: 40px;
   height: 40px;
@@ -253,6 +255,8 @@ header {
 
 .banner__slider--show {
   display: block;
+
+  height: 70vw;
 }
 
 .banner__vertical_1,
@@ -889,10 +893,10 @@ textarea {
     padding: 22px 35px 24px 58px;
   } */
 
-  /* .banner__horizontal_2 {
-    width: 100%;
+  .banner__horizontal_2 {
+    width: 74%;
     height: auto;
-  } */
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -913,9 +917,9 @@ textarea {
     height: 85px;
   }
 
-  .header  {
+  .header {
     /* display: block; */
-  
+
     justify-content: center;
   }
 
@@ -993,4 +997,12 @@ textarea {
   left: 90px;
 
   z-index: 40;
+}
+
+.blue {
+  background-color: #648bf0;
+}
+
+.red {
+  background-color: #f06c64;
 }

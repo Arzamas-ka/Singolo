@@ -19,6 +19,7 @@ const screenBlackPhoneTwo = document.querySelector('.banner__phones_2-black');
 const burgerBtn = document.querySelector('.burger');
 const navigation = document.querySelector('.navigation');
 const logo = document.querySelector('#logo');
+const banner = document.querySelector('.banner');
 
 const activeNav = () => {
   navList.addEventListener('click', evt => {
@@ -39,6 +40,7 @@ const slider = () => {
 
   arrowLeft.addEventListener('click', () => {
     if (index === 0) {
+      banner.classList.add('blue');
       currentSlide.classList.remove('banner__slider--show');
       currentSlide = slides[slides.length - 1];
       currentSlide.classList.add('banner__slider--show');
@@ -48,6 +50,7 @@ const slider = () => {
     }
 
     index -= 1;
+    banner.classList.remove('blue');
     currentSlide.classList.remove('banner__slider--show');
     currentSlide = slides[index];
     currentSlide.classList.add('banner__slider--show');
@@ -55,6 +58,8 @@ const slider = () => {
 
   arrowRight.addEventListener('click', () => {
     if (index === 0) {
+      // banner.style.backgroundColor = '#648bf0';
+      banner.classList.add('blue');
       currentSlide.classList.remove('banner__slider--show');
       currentSlide = slides[slides.length - 1];
       currentSlide.classList.add('banner__slider--show');
@@ -64,6 +69,7 @@ const slider = () => {
     }
 
     index -= 1;
+    banner.classList.remove('blue');
     currentSlide.classList.remove('banner__slider--show');
     currentSlide = slides[index];
     currentSlide.classList.add('banner__slider--show');
