@@ -1,0 +1,26 @@
+{
+  "name": "singolo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build": "gulp sass-compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arzamas-ka/Singolo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arzamas-ka/Singolo/issues"
+  },
+  "homepage": "https://github.com/Arzamas-ka/Singolo#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-watch": "^5.0.1"
+  }
+}
