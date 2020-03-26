@@ -1,6 +1,8 @@
 const navList = document.querySelector('.navigation__list');
 const arrowLeft = document.querySelector('.arrow-left');
 const arrowRight = document.querySelector('.arrow-right');
+const verticalPhone = document.querySelector('.banner__vertical_1');
+const horizontalPhone = document.querySelector('.banner__horizontal_1');
 const portfolioMenuList = document.querySelector('.portfolio-list');
 const galleryImages = document.querySelector('.portfolio-gallery');
 const btnForm = document.querySelector('.quote__button');
@@ -12,8 +14,12 @@ const phoneBtnVert = document.querySelector('.banner__home-vertical');
 const phoneBtnHorzt = document.querySelector('.banner__home-horizontal');
 const phoneBtnSldTwo = document.querySelector('.banner__home-phones_2');
 const screenBlackVert = document.querySelector('.banner__vertical-black');
-const screenBlackHorzt = document.querySelector('.banner__horizontal-black');
+const screenBlackHorzt = document.querySelector('.banner__horizontal-black');;
 const screenBlackPhoneTwo = document.querySelector('.banner__phones_2-black');
+const burgerBtn = document.querySelector('.burger');
+const navigation = document.querySelector('.navigation');
+const logo = document.querySelector('#logo');
+const banner = document.querySelector('.banner');
 
 const activeNav = () => {
   navList.addEventListener('click', evt => {
@@ -34,6 +40,7 @@ const slider = () => {
 
   arrowLeft.addEventListener('click', () => {
     if (index === 0) {
+      banner.classList.add('blue');
       currentSlide.classList.remove('banner__slider--show');
       currentSlide = slides[slides.length - 1];
       currentSlide.classList.add('banner__slider--show');
@@ -43,6 +50,7 @@ const slider = () => {
     }
 
     index -= 1;
+    banner.classList.remove('blue');
     currentSlide.classList.remove('banner__slider--show');
     currentSlide = slides[index];
     currentSlide.classList.add('banner__slider--show');
@@ -50,6 +58,8 @@ const slider = () => {
 
   arrowRight.addEventListener('click', () => {
     if (index === 0) {
+      // banner.style.backgroundColor = '#648bf0';
+      banner.classList.add('blue');
       currentSlide.classList.remove('banner__slider--show');
       currentSlide = slides[slides.length - 1];
       currentSlide.classList.add('banner__slider--show');
@@ -59,6 +69,7 @@ const slider = () => {
     }
 
     index -= 1;
+    banner.classList.remove('blue');
     currentSlide.classList.remove('banner__slider--show');
     currentSlide = slides[index];
     currentSlide.classList.add('banner__slider--show');
@@ -142,15 +153,25 @@ closePopup();
 
 const toggleBlackScreenPhone = () => {
   phoneBtnVert.addEventListener('click', () => {
+    verticalPhone.classList.toggle('black-hidden');
     screenBlackVert.classList.toggle('black-show');
   });
 
   phoneBtnHorzt.addEventListener('click', () => {
+    horizontalPhone.classList.toggle('black-hidden');
     screenBlackHorzt.classList.toggle('black-show');
   });
 
-  phoneBtnSldTwo.addEventListener('click', () => {
-    screenBlackPhoneTwo.classList.toggle('black-show');
-  });
+  // phoneBtnSldTwo.addEventListener('click', () => {
+  //   screenBlackPhoneTwo.classList.toggle('black-show');
+  // });
 };
 toggleBlackScreenPhone();
+
+const getMenuMobile = () => {
+  burgerBtn.addEventListener('click', () => {
+    navigation.classList.toggle('menu-show');
+    logo.classList.toggle('logo-absolute');
+  })
+}
+getMenuMobile();
