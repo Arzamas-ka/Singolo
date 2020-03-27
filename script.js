@@ -40,7 +40,7 @@ const slider = () => {
 
   arrowLeft.addEventListener('click', () => {
     if (index === 0) {
-      banner.classList.add('blue');
+      banner.classList.add('banner--blue');
       currentSlide.classList.remove('banner__slider--show');
       currentSlide = slides[slides.length - 1];
       currentSlide.classList.add('banner__slider--show');
@@ -50,7 +50,7 @@ const slider = () => {
     }
 
     index -= 1;
-    banner.classList.remove('blue');
+    banner.classList.remove('banner--blue');
     currentSlide.classList.remove('banner__slider--show');
     currentSlide = slides[index];
     currentSlide.classList.add('banner__slider--show');
@@ -59,7 +59,7 @@ const slider = () => {
   arrowRight.addEventListener('click', () => {
     if (index === 0) {
       // banner.style.backgroundColor = '#648bf0';
-      banner.classList.add('blue');
+      banner.classList.add('banner--blue');
       currentSlide.classList.remove('banner__slider--show');
       currentSlide = slides[slides.length - 1];
       currentSlide.classList.add('banner__slider--show');
@@ -69,7 +69,7 @@ const slider = () => {
     }
 
     index -= 1;
-    banner.classList.remove('blue');
+    banner.classList.remove('banner--blue');
     currentSlide.classList.remove('banner__slider--show');
     currentSlide = slides[index];
     currentSlide.classList.add('banner__slider--show');
@@ -170,7 +170,8 @@ toggleBlackScreenPhone();
 
 const getMenuMobile = () => {
   burgerBtn.addEventListener('click', () => {
-    navigation.classList.toggle('menu-show');
+    burgerBtn.classList.toggle('burger--transform');
+    navigation.classList.toggle('navigation--show');
     logo.classList.toggle('logo-absolute');
   })
 }

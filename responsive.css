@@ -7,11 +7,9 @@ html {
 }
 
 body {
-  /* max-width: 1020px; */
   margin: 0 auto;
   padding: 0;
 
-  /* background-color: rgba(0, 0, 0, .1); */
   font-family: 'Lato', 'Aria', sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -178,11 +176,6 @@ header {
   height: auto;
 }
 
-/* .banner__horizontal_2 {
-   width: 100%;
-   height: auto;
- } */
-
 .banner__slider {
   display: none;
 }
@@ -195,14 +188,6 @@ header {
 
   padding: 51px 35px 55px 58px;
 }
-/* 
-.banner__gallery_1 {
-  padding: 51px 35px 55px 58px;
-}
-
-.banner__gallery_2 {
-  padding: 32px 35px 44px 58px;
-} */
 
 .banner__slider_1 {
   width: 100%;
@@ -221,7 +206,7 @@ header {
 .arrow-left {
   position: absolute;
   top: 47%;
-  left: 15%;
+  left: 20px;
 
   width: 40px;
   height: 40px;
@@ -232,7 +217,7 @@ header {
 .arrow-right {
   position: absolute;
   top: 46%;
-  right: 15%;
+  right: 20px;
 
   width: 40px;
   height: 40px;
@@ -264,10 +249,6 @@ header {
   position: relative;
 }
 
-/* .banner__horizontal_1 {
-   margin-right: 24px;
- } */
-
 .banner-line_1 {
   height: 10px;
   background-color: #ea676b;
@@ -275,8 +256,6 @@ header {
 
 .banner__home-vertical,
 .banner__home-horizontal,
- /* .banner__horizontal-black, */
- /* .banner__vertical-black, */
 .banner__home-phones_2,
 .banner__phones_2-black {
   position: absolute;
@@ -287,12 +266,6 @@ header {
   width: 45px;
   height: 45px;
 }
-
-/* .banner__home-vertical, */
-/* .banner__home-horizontal, */
-/* .banner__home-phones_2 { */
-/* width: 40px; */
-/* } */
 
 .banner__home-vertical {
   top: 83.5%;
@@ -314,13 +287,6 @@ header {
 
   cursor: pointer;
 }
-
-/* .banner__home-vertical:hover, */
-/* .banner__home-horizontal:hover, */
-/* .banner__home-phones_2:hover { */
-/* border-radius: 50%; */
-/* border: 1px solid #ccc; */
-/* } */
 
 .banner-line_2 {
   height: 10px;
@@ -519,7 +485,6 @@ header {
 .about-us-team {
   display: flex;
   flex-wrap: nowrap;
-  /* justify-content: space-between; */
 }
 
 .about-us__line {
@@ -537,8 +502,6 @@ header {
 }
 
 .team-cart__img {
-  /* width: 300px;
-  height: 300px; */
   width: 100%;
   height: auto;
   margin-bottom: 12px;
@@ -547,19 +510,6 @@ header {
 .team-cart__item:hover {
   opacity: 0.5;
 }
-
-/* .team-cart:nth-child(1) {
-  margin-left: 24px;
-  margin-right: -3px;
-}
-
-.team-cart:nth-child(2) {
-  margin-right: 2px;
-}
-
-.team-cart:nth-child(3) {
-  margin-left: 2px;
-} */
 
 .team-cart__title {
   margin: 5px 0 5px;
@@ -632,7 +582,6 @@ header {
 }
 
 .quote__form input {
-  /* width: 619px; */
   height: 38px;
   margin-top: 16px;
   padding-bottom: 2px;
@@ -676,7 +625,6 @@ header {
 }
 
 textarea {
-  /* width: 619px; */
   height: 202px;
   margin-top: 16px;
   padding-top: 10px;
@@ -862,22 +810,6 @@ textarea {
 }
 
 /* media */
-@media screen and (max-width: 767px) {
-  .navigation {
-    display: none;
-  }
-
-  .arrow-right {
-    width: 30px;
-    height: 30px;
-  }
-
-  .arrow-left {
-    width: 30px;
-    height: 30px;
-  }
-}
-
 @media screen and (max-width: 1000px) {
   .arrow-right {
     right: 10px;
@@ -889,10 +821,6 @@ textarea {
 }
 
 @media screen and (max-width: 830px) {
-  /* .banner__gallery_2 {
-    padding: 22px 35px 24px 58px;
-  } */
-
   .banner__horizontal_2 {
     width: 74%;
     height: auto;
@@ -905,36 +833,42 @@ textarea {
     height: 140px;
   }
 }
-/* 
-@media screen and (min-width: 768px) {
-  .team-cart__img {
-    width: 100%;
-  }
-} */
 
 @media screen and (max-width: 767px) {
   header {
-    height: 85px;
+    height: 95px;
   }
 
   .header {
-    /* display: block; */
-
     justify-content: center;
   }
 
+  .arrow-right {
+    width: 30px;
+    height: 30px;
+  }
+
+  .arrow-left {
+    width: 30px;
+    height: 30px;
+  }
+
   .navigation {
-    width: 300px;
+    opacity: 0;
+    width: 320px;
 
     position: absolute;
     top: 0;
     left: 0;
+
+    transform: translateX(-350px);
+    transition: opacity 1s;
   }
 
   .navigation__list {
     flex-direction: column;
 
-    height: 1000vw;
+    height: 500vw;
     padding-top: 200px;
 
     background-color: #2d303a;
@@ -983,12 +917,17 @@ textarea {
 
     z-index: 50;
   }
+
+  .banner__slider--show {
+    height: 70vw;
+  }
 }
 
-.menu-show {
-  display: block;
+.navigation--show {
+  opacity: 1;
 
-  /* transform: rotate(90deg); */
+  transition: all 1s;
+  transform: translateX(0);
 }
 
 .logo-absolute {
@@ -999,10 +938,11 @@ textarea {
   z-index: 40;
 }
 
-.blue {
+.banner--blue {
   background-color: #648bf0;
 }
 
-.red {
-  background-color: #f06c64;
+.burger--transform {
+  padding-top: 59px;
+  transform: rotate(-90deg);
 }
