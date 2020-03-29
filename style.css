@@ -275,8 +275,11 @@ header {
 
 .banner__phones_2-black {
   display: none;
-  top: 66px;
-  left: 347px;
+  top: 61px;
+  left: 353px;
+
+  width: 197px;
+  height: 339px;
 }
 
 .black-show {
